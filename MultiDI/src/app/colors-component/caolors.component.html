@@ -1,0 +1,9 @@
+<div>
+    <h3>{{title}}</h3>
+    <ul>
+        <li *ngFor="let color of colors">
+            <a (click)="detailColor(color.id)">{{color.name}}</a>
+        </li>
+    </ul>
+</div>
+<router-outlet></router-outlet>

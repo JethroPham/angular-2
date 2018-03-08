@@ -1,0 +1,10 @@
+<div *ngIf="color">
+    <h2>{{color.name}} details!</h2>
+    <div>
+        <label>id: </label>{{color.id}}
+    </div>
+    <div>
+        <label>Code: </label>{{color.code}}
+    </div>
+    <button (click)="goBack()">Back</button>
+</div>
