@@ -1,0 +1,7 @@
+<label><input type="checkbox" [checked]="showColors" (change)="showColors = !showColors">Colors</label>
+<label><input type="checkbox" [checked]="showLang" (change)="showLang = !showLang">Languages</label>
+
+<h1>Dependency Injection Angular</h1>
+
+<my-color *ngIf="showColors"></my-color>
+<my-lang *ngIf="showLang"></my-lang>
